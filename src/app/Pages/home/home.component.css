@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Altone';
+    src: url('../../../../public/fonts/Altone\ Trial-Bold.ttf');
+}
+
+@font-face { 
+    font-family: 'Altone Regular';
+    src: url('../../../../public/fonts/Altone\ Trial-Regular.ttf');
+}
+@font-face {
+    font-family: 'Tommy';
+    src: url('../../../../public/fonts/Champagne\ &\ Limousines.ttf');
+}
+*{
+    overflow-x: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 95vh;
+    background-color: #f8f8f8;
+}
+
+.background__container__title{
+    width: 100vw;
+    height: 42vh;
+    background-color: white;
+    background-image: url('../../../../public/images/background_2.jpg');
+    background-repeat: no-repeat;
+    background-position-x: 65vh;
+}
+
+.container__title{
+    width: 100vw;
+    height: 42vh;
+    backdrop-filter: blur(2px);
+    position: relative;
+    right: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__title{
+    font-family: 'Altone';
+    font-size: 70px;
+    color: #C8B1F9;
+}
+
+.logo__title__two{
+    font-family: 'Tommy';
+    color: #3C1B60;
+}
+
+.subtext{
+    font-family: 'Altone Regular';
+    font-size: 25px;
+    color: #403C34;
+}
+
+.subtitle__discover{
+    font-family: 'Altone';
+    font-size: 30px;
+    color: #403C34;
+
+}
+.container__products__title{
+    height: 15vh;
+    padding: 5vh;
+}
+.background__container__products{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container__products{
+    width: 65vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.container__product{
+    width: 45vh;
+    height: 55vh;
+    background-color: white;
+    margin: 1vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.image__product{
+    margin: 1vh;
+
+
+}
+
+img{
+    border-radius: 10px;
+    object-fit: cover;
+    width: 40vh;
+    height: 30vh;
+}

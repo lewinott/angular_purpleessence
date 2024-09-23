@@ -1,0 +1,11 @@
+<div class="background">
+    <div class="main__container">
+        <form [formGroup]="form">
+            <p class="label__form">Login</p>
+            <input class="input__form" type="text" [formControl]="form.controls.username">
+            <p class="label__form">Senha</p>
+            <input class="input__form" type="text" [formControl]="form.controls.password">
+            <button class="button__form" (click)="login()">Login</button>
+        </form>
+    </div>
+</div>
