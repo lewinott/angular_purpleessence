@@ -2,8 +2,8 @@
 <body>
     <div class = "background__container__title">
         <div class = "container__title">
-            <p class = "logo__title">Purple <span class = "logo__title__two">Essence</span></p>
-            <p class = "subtext">Lorem ipsum dolor sit amet...</p>
+            <p class = "logo__title">SpreeCommerce</p>
+            <p class = "subtext">Find everything in one place</p>
         </div>
     </div>
 
@@ -12,18 +12,19 @@
             <p class = "subtitle__discover">Discover our products!</p>
         </div>
         <div class = "container__products">
-            <div class = "container__product">
+            <div *ngFor="let product of products" class = "container__product">
                 <div class = "image__product">
-                    <img src="/images/diffuser.jpg" alt="">
-                    <p>Lavander Diffuser</p>
-                    <p></p>
+                    <img src="{{product?.thumbnail}}" alt="">
                 </div>
+                <p class = "title__product">{{product?.title}}</p>
+                <p class = "subtitle__product"><span>Price:</span> ${{product?.price}}</p>
+                <p class = "subtitle__product"><span>Rating:</span> {{product?.rating}}</p>
+                <p class = "subtitle__product"><span>Discount:</span> {{product?.discountPercentage}}%</p>
 
+                <button class = "button__product">Add to cart</button>
             </div>
-            <div class = "container__product">
-            </div>
-            <div class = "container__product">
 
+            <div class = "container__product">
             </div>
         </div>
     </div>

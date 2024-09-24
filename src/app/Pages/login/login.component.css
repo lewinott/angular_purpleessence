@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #A9A7D9;
+    background-color: #F2F2F2;
 }
 
 .main__container{
@@ -44,7 +44,7 @@ form{
 }
 
 .button__form{
-    background-color: #91AAF2;
+    background-color: #B9F263;
     width: 40vh;
     height: 4.5vh;
     font-weight: bold;
@@ -53,7 +53,7 @@ form{
 }
 
 .button__form:hover{
-    background-color: #4161BF;
+    background-color: #85D932;
 }
 
 .label__form{
