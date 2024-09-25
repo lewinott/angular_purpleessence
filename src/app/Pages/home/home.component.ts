@@ -30,5 +30,7 @@ export class HomeComponent {
         console.error('Erro ao buscar produtos:', error);
     }
   }
+
+  
 }
 

@@ -1,30 +1,29 @@
 <app-navbar></app-navbar>
+
 <body>
-    <div class = "background__container__title">
-        <div class = "container__title">
-            <p class = "logo__title">SpreeCommerce</p>
-            <p class = "subtext">Find everything in one place</p>
+    <div class="background__container__title">
+        <div class="container__title">
+            <p class="logo__title">SpreeShop</p>
+            <p class="subtext">Find everything in one place</p>
         </div>
     </div>
 
-    <div class = "background__container__products">
-        <div class = "container__products__title">
-            <p class = "subtitle__discover">Discover our products!</p>
+    <div class="background__container__products">
+        <div class="container__products__title">
+            <p class="subtitle__discover">Discover our products!</p>
+            <p class="category__product">beauty and home</p>
         </div>
-        <div class = "container__products">
-            <div *ngFor="let product of products" class = "container__product">
-                <div class = "image__product">
-                    <img src="{{product?.thumbnail}}" alt="">
+        <div class="container__products">
+            <div *ngFor="let product of products" class="container__product">
+                <div class="image__product">
+                    <img src="{{product?.images[0]}}" alt="">
                 </div>
-                <p class = "title__product">{{product?.title}}</p>
-                <p class = "subtitle__product"><span>Price:</span> ${{product?.price}}</p>
-                <p class = "subtitle__product"><span>Rating:</span> {{product?.rating}}</p>
-                <p class = "subtitle__product"><span>Discount:</span> {{product?.discountPercentage}}%</p>
-
-                <button class = "button__product">Add to cart</button>
-            </div>
-
-            <div class = "container__product">
+                <p class="title__product">{{product?.title}}</p>
+                <p class = "category__product">{{product?.category}}</p>
+                <div class = "description__products">
+                    <p class="subtitle__product">${{product?.price}}</p>
+                    <button class="button__product"></button>
+                </div>
             </div>
         </div>
     </div>
